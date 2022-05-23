@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+	<body>
+		<div class="wrap">
+		<header class="header">
+    <div class="header__body _container">
+        <img class="header__logo" src="img/logo.png" alt="">
+        <div class="header__icons">
+            <div class="header__icon">
+                <a href="permission.html" class="header__link">
+                    <span class="icon-user"></span>
+                    <span class="header__subtitle">
+                        Разрешения
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+		<main class="content">
+			<div class="content__body _container">
+				<div class="content__buttons content__buttons_center">
+					<div class="content__form">
+						<input type="submit" class="content__button-checkout content__button-checkout_active" value="Вход"  name="operative-permissions">
+					</div>
+					<div class="content__form">
+						<input type="submit" class="content__button-checkout" value="Регистрация" name="archive-permissions">
+					</div>
+				</div>
+			</div>
+			<div class="authorization authorization_active">
+				<div class="authorization__body">
+					<form method="post" class="authorization__content">
+						<div class="reg-auth-title">
+							Войти
+						</div>
+						<div class="input-block">	
+							<label for="name">Email</label>
+							<input type="email" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" class="input" required placeholder="Введите Ваш email">
+						</div>
+						<div class="input-block">	
+							<label for="name">Пароль</label>
+							<div class="authorization__password">
+								<input type="password" pattern="(?=.*[A-ZА-Я])(?=.*[a-zа-я])(?=.*[0-9])(?=.*[!@#$%^&*])[А-Яа-яa-zA-Z0-9!@#$%^&*]{8,100}"  title="Пароль должен содержать буквы и хотя бы одну цифру,специальный символ и букву в верхнем регистре. Длина ввода от 8 до 100 символов" class="input input-password password" required class="input input-password" placeholder="Введите Ваш пароль">
+								<span class="authorization__icon icon-password"></span>
+							</div>
+						</div>
+						<div class="authorization__remember">
+							<input type="checkbox" id="remember" name="remember_me">
+							<label for="remember">Запомнить меня</label>
+						</div>
+						<input type="submit" class="input button" value="Войти">
+					</form>
+				</div>
+			</div>
+			<form method="post" class="registration">
+				<div class="registration__body">
+					<div class="registration__content">
+						<div class="reg-auth-title">
+							Зарегестрироваться
+						</div>
+						<div class="registration__subtitle">
+							Введите ФИО:
+						</div>
+						<div class="registration__block">
+							<div class="input-block">	
+								<label for="name">Имя*</label>
+								<input type="text" value="ААААа" pattern="[А-Яа-я]{2,100}" placeholder="Введите Ваше имя" class="input text-input" id="name" required title="Имя пользователя должно содержать только кириллические символы. Длина ввода от 2 до 100 символов">
+							</div>
+							<div class="input-block">	
+								<label for="name">Фамилия*</label>
+								<input type="text" value="ААААа" pattern="[А-Яа-я]{2,100}" placeholder="Введите Вашу фамилию" class="input text-input" required title="Фамилия пользователя должно содержать только кириллические символы. Длина ввода от 2 до 100 символов">
+							</div>
+							<div class="input-block">	
+								<label for="name">Отчество*</label>
+								<input type="text" value="ААААа" pattern="^[А-Яа-я]{2,100}$" placeholder="Введите Ваше отчество" class="input text-input" required title="Отчество пользователя должно содержать только кириллические символы. Длина ввода от 2 до 100 символов">
+							</div>
+						</div>
+						<div class="registration__subtitle">
+							Введите контактные данные:
+						</div>
+						<div class="registration__block">
+							<div class="input-block">	
+								<label for="name">Email*</label>
+								<input type="email" value="asdad@sdf.dsf" placeholder="Введите Ваш email" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" class="input" required>
+							</div>
+							<div class="input-block">	
+								<label for="name">Мобильный телефон*</label>
+								<input type="text" value="+7 (111) 111-11-11" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" id="mobile-phone" class="input" required placeholder="Введите Ваш мобильный номер">
+							</div>
+							<div class="input-block">	
+								<label for="name">МАТС</label>
+								<input type="text" value="(1111) 1111" pattern="\(\d{4}\) \d{4}" id="mats" class="input" required placeholder="Введите Ваш МАТС номер">
+							</div>
+						</div>
+						<div class="registration__block">
+							<div class="input-block">	
+								<label for="name">ГАТС</label>
+								<input type="text" pattern="\d{6}" value="111111" id="gats" class="input" required placeholder="Введите Ваш ГАТС номер">
+							</div>
+							<div class="input-block">	
+								<label for="name">DECT</label>
+								<input type="text"value="(1111) 1111" pattern="\(\d{4}\) \d{4}" id="dect" class="input" required placeholder="Введите Ваш DECT номер">
+							</div>
+						</div>
+						<div class="registration__subtitle">
+							Выберите должность:
+						</div>
+						<div class="registration__block">
+							<div class="input-block">	
+								<label for="name">Должность</label>
+								<input type="text" hidden class="input input-position">
+								<div class="custom-select">
+									<select class="select-position">
+										<option value="0">Начальник</option>
+										<option value="1">Начальник</option>
+										<option value="2">Инженер</option>
+									</select>
+								</div> 
+							</div>
+						</div>
+						<div class="registration__subtitle">
+							Выберите подразделение:
+						</div>
+						<div class="registration__subdivision">
+							<div class="tree responsible__tree">
+								<div class="tree__content">
+									<div class="tree__list">
+																		<div class="tree__item tree__item_top">
+											<input type="text" hidden="" value="19" class="tree__input">
+											<div class="tree__item-block">
+												<span class="icon-square-plus-solid tree__plus tree__plus_active"></span>
+												<div class="tree__text">
+													Акционерное общество "Транснефть-Север"
+												</div>
+											</div>
+										<div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="12"><span class="icon-square-plus-solid tree__plus tree__plus_active"></span><div class="tree__text">Вологодское районное нефтеперекачивающее управление</div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="15"><span class="icon-square-plus-solid tree__plus"></span><div class="tree__text">Служба автоматизированных систем</div></div></div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="18"><span class="icon-square-plus-solid tree__plus"></span><div class="tree__text">Отдел пожарной безопасности</div></div></div></div></div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="13"><span class="icon-square-plus-solid tree__plus tree__plus_active"></span><div class="tree__text">Ухтинское районное нефтеперекачивающее управление</div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="16"><span class="icon-square-plus-solid tree__plus"></span><div class="tree__text">Служба автоматизированных систем</div></div></div></div></div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="14"><span class="icon-square-plus-solid tree__plus tree__plus_active"></span><div class="tree__text">Усинское районное нефтеперекачивающее управление</div></div><div class="tree__list"><div class="tree__item"><div class="tree__item-block"><input class="tree__input" hidden="hidden" value="17"><span class="icon-square-plus-solid tree__plus"></span><div class="tree__text">Служба автоматизированных систем</div></div></div></div></div></div></div>
+																	</div>
+								</div>
+							</div>
+							<div class="input-block">	
+								<label for="name">Подразделение</label>
+								<textarea pattern="[А-Яа-я]{2,100}" id="textarea-subdivision" readonly class="input valid" title="Выбранное Вами подразделение отобразиться в данном поле" required placeholder="Выберите подразделение" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, fugit? Consequatur repellendus eius suscipit qui totam sequi ad corporis debitis animi. Ratione expedita facilis aliquid quaerat earum porro, harum neque?</textarea>
+							</div>
+						</div>
+						<div class="registration__subtitle">
+							Введите пароли:
+						</div>
+						<div class="registration__block">
+							<div class="input-block">	
+								<label for="name">Пароль</label>
+								<div class="authorization__password">
+									<input type="password" value="Casd!111" pattern="(?=.*[A-ZА-Я])(?=.*[a-zа-я])(?=.*[0-9])(?=.*[!@#$%^&*])[А-Яа-яa-zA-Z0-9!@#$%^&*]{8,100}"  title="Пароль должен содержать буквы и хотя бы одну цифру,специальный символ и букву в верхнем регистре. Длина ввода от 8 до 100 символов" class="input input-password password reg-pass-first" required placeholder="Введите новый пароль">
+									<span class="authorization__icon icon-password"></span>
+								</div>
+							</div>
+							<div class="input-block">	
+								<label for="name">Пароль</label>
+								<div class="authorization__password">
+									<input type="password" value="Casd!112" pattern="(?=.*[A-ZА-Я])(?=.*[a-zа-я])(?=.*[0-9])(?=.*[!@#$%^&*])[А-Яа-яa-zA-Z0-9!@#$%^&*]{8,100}" title="Пароль должен содержать буквы и хотя бы одну цифру,специальный символ и букву в верхнем регистре. Длина ввода от 8 до 100 символов" class="input input-password reg-pass-second" required placeholder="Подтвердите новый пароль">
+									<span class="authorization__icon icon-password"></span>
+								</div> 
+							</div>
+							<div id="password-different"></div>
+						</div>
+						<input type="submit" class="input button" value="Регистрация">
+						<div class="error">Данный логин уже существует!</div>
+					</div>
+				</div>
+			</form>
+			<div class="block-margin"></div>
+			<input type="text" hidden class="content__ad" value="">
+			<div class="window window-ad">
+				<div class="window__body window__body">
+					<div class="window__top">
+						<div class="window__clear window-ad__clear">
+							<span class="icon-clear"></span>
+						</div>
+					</div>
+						<div class="window__title window-ad__title">
+							Оповещение
+						</div>
+						<div class="window__text">
+							<div class="window__subtext">Ваша заявка на регистрацию успешно отправлена! </div>
+							<div class="window__subtext"> В случае, если заявка будет одобрена, мы оповестим Вас по указанной Вами почте.</div>
+						</div>
+						<input type="submit" class="input button window-ad__button" value="Ясно">
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+    <div class="footer__body _container">
+        <address class="footer__mail">admin@gmail.com</address>
+        <div class="footer__copy">&copy; ПАО "Транснефть" 2022</div>
+        <div class="footer__links">
+            <a href="https://vk.com/transneftofficial" target="_blank" class="icon-vk footer__link"></a>
+            <a href="https://www.facebook.com/TRANSNEFT" target="_blank" class="icon-facebook footer__link"></a>
+            <a href="https://twitter.com/transneftRu" target="_blank" class="icon-twitter footer__link"></a>
+            <a href="https://www.instagram.com/transneftru/" target="_blank" class="icon-instagram-second footer__link"></a>
+            <a href="https://t.me/transneftofficial" target="_blank" class="icon-telegram footer__link"></a>
+            <a href="https://invite.viber.com/?g2=AQAJmjbSlaVw3kiGiek7m4%2BbhLm0X01ggdP5DAoiuQUSUvejqFEpi8Rp5Wy6uqI7&lang=ru" target="_blank" class="icon-viber footer__link"></a>
+            <a href="https://www.youtube.com/user/transneftru" target="_blank" class="icon-youtube footer__link"></a>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

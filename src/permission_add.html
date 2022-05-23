@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrap">
+		@@include('html/header.html',{})
+		<main class="content">
+			<div class="content__body _container">
+                <div class="navigation-chain">
+                    <div class="navigation-chain__item"><a href="permission.html">Разрешения / </a></div>
+                    <div class="navigation-chain__item navigation-chain__item_active">Добавление разрешения</div>
+                </div>
+				<div class="content__add-permission permission-add">
+            <form method="post" class="permission-add__top">
+              <div class="permission-add__number">
+                Разрешение №
+              </div>
+              <input type="text" class="permission__number permission__number_first input" placeholder="Номер" value="04-34">
+              <span class="permission__slash">/</span>
+              <input type="text" class="permission__number permission__number_second input" placeholder="Номер" value="343224">
+              <input type="submit" class="permission-add__button input button" value="Изменить">
+            </form>
+          <div class="permission-add__list">
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                Выдал начальнику Иванов Иван Иванович:
+              </div>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                1. Периоды проведения работ:
+              </div>
+              <form method="post" class="permission-add__block">
+                <div class="permission-add__dates">
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      Дата
+                    </div>
+                    <div class="permission-add__col">
+                      Время начала
+                    </div>
+                    <div class="permission-add__col">
+                      Время окончания
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                  <div class="permission-add__date">
+                    <div class="permission-add__col">
+                      12.12.2022
+                      <input type="text" hidden value="12.12.2022">
+                    </div>
+                    <div class="permission-add__col">
+                      13:30
+                      <input type="text" hidden value="13:30">
+                    </div>
+                    <div class="permission-add__col">
+                      15:40
+                      <input type="text" hidden value="15:40">
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" class="permission-add__button input button sticky" value="Изменить">
+              </form>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                2. Наименование работ, основание для выполнения работ:
+              </div>
+              <form class="permission-add__types">
+                <div class="permission-add__subtitle">
+                  2.1 Типовые работы: 
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__typical">
+                    <div class="permission-add__type-name">
+                      - Типовая работа 1
+                    </div>
+                    <span class="icon-clear permission-add__clear"></span>
+                  </div>
+                  <div class="permission-add__description">
+                    <textarea readonly class="permission-add__textarea textarea" name="untypical_works" id="untypical_works" cols="30" rows="10" placeholder="Введите нетиповые работы...">{{current_typical_work.description}}</textarea>
+                  </div>
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__typical">
+                    <div class="permission-add__type-name">
+                      - Типовая работа 1
+                    </div>
+                    <span class="icon-clear permission-add__clear"></span>
+                  </div>
+                  <div class="permission-add__description">
+                    <textarea readonly class="permission-add__textarea textarea" name="untypical_works" id="untypical_works" cols="30" rows="10" placeholder="Введите нетиповые работы...">{{current_typical_work.description}}</textarea>
+                  </div>
+                </div>
+                <div class="permission-add__type">
+                  <div class="permission-add__typical">
+                    <div class="permission-add__type-name">
+                      - Типовая работа 1
+                    </div>
+                    <span class="icon-clear permission-add__clear"></span>
+                  </div>
+                  <div class="permission-add__description">
+                    <textarea readonly class="permission-add__textarea textarea" name="untypical_works" id="untypical_works" cols="30" rows="10" placeholder="Введите нетиповые работы...">{{current_typical_work.description}}</textarea>
+                  </div>
+                </div>
+              </form>
+              <div class="permission-add__subtitle">
+                  2.2 Нетиповые работы:
+                </div>
+              <div class="permission-add__block">
+                <textarea class="permission-add__textarea textarea" readonly name="" id="untypical_works" cols="30" rows="10" placeholder="Введите нетиповые работы...">wdw</textarea>
+              </div>
+              <input type="submit" class="permission-add__button permission-add__button_margin input button" value="Добавить">
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                4. Прочие условия проведения работ:
+              </div>
+              <div class="permission-add__condition condition-permission">
+                <div class="condition-permission__list">
+                  <div class="condition-permission__item">
+                    <div class="condition-permission__block">
+                    <div class="condition-permission__subtitle">
+                        4.1 Аварийная готовность:
+                    </div>
+                      <input type="text" placeholder="Введите время" class="input condition-permission__minute">
+                      <div class="condition-permission__subtitle">
+                        минут
+                    </div>
+                    </div>
+                  </div>
+                  <div class="condition-permission__item">
+                    <div class="condition-permission__block">
+                      <div class="condition-permission__subtitle">
+                        4.2 Отметка об отсутствии(наличии) аварийного включения резерва(АВР) при выполнении работ: 
+                      </div>
+                      <form method="post" class="condition-permission__checkboxes">
+                        <label for="yes-emergency-activation">ДА</label> 
+                        <input type="radio" id="yes-emergency-activation" name="emergency-activation">
+                        <label for="no-emergency-activation">НЕТ</label> 
+                        <input type="radio" id="no-emergency-activation" name="emergency-activation" checked>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="condition-permission__item">
+                    <div class="condition-permission__subtitle">
+                      4.3 Ответственные за подготовку работ:
+                    </div>
+                    <div class="permission-add__responsibles">
+                      <form method="post" method="post" class="permission-add__responsible">
+                        <div class="permission-add__name" style="display: inline-block">
+                         4.3.1. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.3.2. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.3.3. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post">
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="submit" class="permission-add__button input button" value="Добавить">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="condition-permission__item">
+                    <div class="condition-permission__subtitle">
+                      4.4 Ответственные за проведение работ:
+                    </div>
+                    <div class="permission-add__responsibles">
+                      <form method="post" method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                         4.4.1. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.4.2. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.4.3. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post">
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="submit" class="permission-add__button input button" value="Добавить">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="condition-permission__item">
+                    <div class="condition-permission__subtitle">
+                      4.5 Ответственные за контроль при производстве работ:
+                    </div>
+                    <div class="permission-add__responsibles">
+                      <form method="post" method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                         4.5.1. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.5.2. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post" class="permission-add__responsible">
+                        <div class="permission-add__name">
+                          4.5.3. Иванов Иван Иванович
+                        </div>
+                        <span class="icon-clear permission-add__clear"></span>
+                      </form>
+                      <form method="post">
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="text" value="Иванов Иван Иванович" hidden>
+                        <input type="submit" class="permission-add__button input button" value="Добавить">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                5. Описание:
+              </div>
+              <textarea class="permission-add__textarea textarea" name="" id="description" cols="30" rows="10" placeholder="Введите описание..."></textarea>
+            </div>
+            <div class="permission-add__item">
+              <div class="permission-add__title">
+                7. Дополнительно:
+              </div>
+              <textarea class="permission-add__textarea textarea" name="" id="addition" cols="30" rows="10" placeholder="Введите дополнительную информацию...">sdsd</textarea>
+            </div>
+          </div>
+          <form method="post" class="permission-add__bottom">
+            <textarea class="permission-add__textarea" name="" hidden id="untypical_works_form" cols="30" rows="10" placeholder="Введите нетиповые работы..."></textarea>
+            <textarea class="permission-add__textarea" name="" hidden id="description_form" cols="30" rows="10" placeholder="Введите описание..."></textarea>
+            <textarea class="permission-add__textarea" name="" hidden id="addition_form" cols="30" rows="10" placeholder="Введите дополнительную информацию..."></textarea>
+            <input type="submit" value="Сохранить" class="permission-add__button input button">
+            <input type="submit" value="Выгрузить в PDF" class="permission-add__button input button">
+          </form>
+        </div>
+			</div>
+		</main>
+		@@include('html/footer.html',{})
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
